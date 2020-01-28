@@ -61,11 +61,14 @@
       >View documentation on Github</a
     > -->
     <p>Please ignore design and redirection</p>
-
+    <div id="loadingMessage">
+      🎥 Unable to access video stream (please make sure you have a webcam
+      enabled)
+    </div>
     <canvas id="canvas" hidden></canvas>
     <div id="output" hidden>
       <div id="outputMessage">No QR code detected.</div>
-      <div hidden><b>Data : </b> <strong id="outputData"></strong></div>
+      <div hidden><b>Data:</b> <strong id="outputData"></strong></div>
     </div>
     <script>
       var video = document.createElement('video');
